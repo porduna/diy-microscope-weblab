@@ -146,5 +146,5 @@ def dispose_experiment(session_id):
     return 'unknown op'
 
 def run():
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
 
