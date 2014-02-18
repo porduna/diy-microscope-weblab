@@ -1,0 +1,83 @@
+{% set title = "Home" %}
+{% set current_link = "home" %}
+{% extends "_base.html" %}
+{% block body_container %}
+    <div class="row">
+        <div class="col-lg-6">
+            <img width="100%" src="http://www.weblab.deusto.es/webcam/proxied.py/fishtank1">
+            <br><br>
+
+            <div width="100%" class="text-center">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-minus"></span>
+                </button>
+
+                Focus adjustment
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </button>
+            </div>
+            <br>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 text-center">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active text-center">
+                  <img src="http://s8.postimg.org/5jfoz595x/Image5.jpg">
+                  <div class="carousel-caption">Part Of Flower
+                     <br><button class="btn btn-success"><span class="glyphicon glyphicon-play"></span></button>
+                  </div>
+                </div>
+                <div class="item text-center">
+                  <img src="http://s29.postimg.org/xukvn0opj/vlcsnap_2014_01_20_22h03m10s251.png">
+                  <div class="carousel-caption">Sugar particle</div>
+                </div>
+                <div class="item text-center">
+                  <img src="http://s21.postimg.org/gcxe6sax3/vlcsnap_2014_01_20_22h57m30s80.png">
+                  <div class="carousel-caption">Hair</div>
+                </div>
+                <div class="item text-center">
+                  <img src="http://s4.postimg.org/mlq0nyw8t/vlcsnap_2014_01_20_16h03m10s57.png">
+                  <div class="carousel-caption">Plant Leaves Edge</div>
+                </div>
+                <div class="item text-center">
+                  <img src="http://s27.postimg.org/t8k60xds3/Image.jpg">
+                  <div class="carousel-caption">Drop Of Dirty Pond</div>
+                </div>
+                <div class="item text-center">
+                  <img src="http://s28.postimg.org/bdpajtmh9/vlcsnap_2014_01_20_16h14m08s241.png">
+                  <div class="carousel-caption">Sewing Thread End</div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    </div>
+    <style>
+        .carousel-inner > .item > img { margin: 0 auto; }
+    </style>
+{% endblock %}

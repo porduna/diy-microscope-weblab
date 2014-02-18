@@ -39,6 +39,10 @@ EXPIRED_DATA = {
 def index():
     return "You should not access here directly, but through the WebLab-Deusto"
 
+@app.route('/mockup')
+def mockup():
+    return render_template("mockup.html")
+
 @app.route('/lab/<session_id>/')
 def lab_index(session_id):
     data = DATA.get(session_id, None)
